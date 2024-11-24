@@ -1,0 +1,11 @@
+- active | bool/int
+- room_name | string
+- state | int
+- players_connected | object
+- max_players | int
+- each player points | int/float
+- total_time | 
+- total_time_playing |
+- rounds | int
+
+- content
