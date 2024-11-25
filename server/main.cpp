@@ -2,7 +2,7 @@
 #include <cstring>
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <netinet/tcp.h>  // Added for TCP options
+#include <netinet/tcp.h>
 #include <unistd.h>
 #include <vector>
 #include <thread>
@@ -17,7 +17,6 @@ using namespace std;
 void handle_client(int client_socket) {
     char buffer[BUFFER_SIZE] = {0};
     
-    // Configure keep-alive
     int keepalive = 1;
     setsockopt(client_socket, SOL_SOCKET, SO_KEEPALIVE, &keepalive, sizeof(keepalive));
 
